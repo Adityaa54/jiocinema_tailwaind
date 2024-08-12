@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Example</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .hover-visible {
+        opacity: 0;
+        transition: opacity 0.9s;
+      }
+      .parent:hover .hover-visible {
+        opacity: 1;
+      }
+    </style>
+</head>
+<body class="bg-black">
+  <!-- Navbar -->
+  <div class="grid grid-cols-12 border-b border-b-green-50 px-12 py-2 bg-black ">
+    <div class="col-span-2 flex items-center">
+      <div class="h-7 w-7 rounded-full bg-pink-700"></div>
+      <div class="hidden pl-2 font-bold sm:inline-block sm:text-sm md:inline-block md:text-lg">jioCinema</div>
+    </div>
+    <div class="col-span-6 hidden items-center font-semibold sm:flex">
+      <a href="#" class="rounded px-3 py-2 text-white hover:text-pink-600">Home</a>
+      <a href="#" class="rounded px-3 py-2 text-white hover:text-pink-600">About</a>
+      <a href="#" class="rounded px-3 py-2 text-white hover:text-pink-600">Services</a>
+      <a href="#" class="rounded px-3 py-2 text-white hover:text-pink-600">Contact</a>
+    </div>
+    <div class="col-span-3 flex items-center justify-end">
+      <input class="hidden h-9 w-80 rounded-full bg-gray-800 pl-3 text-sm text-white md:inline-block" type="text" id="fname" name="fname" value="Movies, Shows and Sports" />
+    </div>
+    <div class="col-span-7 flex items-center justify-end pl-2 sm:col-span-1">
+      <div class="h-7 w-7 rounded-full bg-gray-800 sm:h-9 sm:w-9"></div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-12 sticky top-0 bg-black z-10">
+    <div class="parent col-span-1 flex justify-center items-center hover:bg-gray-600">
+      <button id="left_scroll" class="hover-visible rounded-full h-6 w-6 sm:h-8 sm:w-8 bg-gray-400 "><</button>
+    </div>
+    <div id="scroll_container" class="col-span-10 flex flex-row justify-normal gap-4 overflow-x-hidden whitespace-nowrap py-4 text-base font-normal text-white">
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">For you</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">Olympics</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">Biggboss</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">Premium</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">KKK</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">OTT Bigg Boss</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">MTV Splitvilla</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">MLC</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">TOP 10</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">MLC</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">TOP 10</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">MLC</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">TOP 10</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">MLC</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">TOP 10</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">MLC</div>
+      <div class="flex items-center justify-center rounded-full bg-gray-700 px-3 py-1">TOP 10</div>
+    </div>
+    <div class="parent col-span-1 flex justify-center items-center hover:bg-gray-600">
+      <button id="right_scroll"   class="hover-visible rounded-full h-6 w-6 sm:h-8 sm:w-8 bg-gray-400 ">></button>
+    </div>
+  </div>
+
+<!-- -------------------------------------- -->
+
+<div class="flex overflow-x-auto justify-normal bg-black p-5 gap-4">
+  <div class="relative bg-slate-900 rounded-3xl sm:h-[21rem] sm:w-[37rem] h-[16rem] w-[30rem] flex-shrink-0">
+    <img src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0808%2Fr1370674_1296x729_16-9.jpg" alt="" class="h-full w-full rounded-3xl">
+    <div class="text-white font-bold absolute inset-0 flex flex-col justify-center items-center mt-56 ">
+      <h1>
+      Can neeraj comeback ?
+    </h1>
+    <p class="font-thin">Lorem ipsum dolor sit amet. Quos, nam?
+    </p>
+    </div>
+  </div>
+  <div class="relative bg-slate-900 rounded-3xl sm:h-[21rem] sm:w-[37rem] h-[16rem] w-[30rem] flex-shrink-0">
+    <img src="https://1.bp.blogspot.com/-dKoig5fjHtA/XaXkDM_S-ZI/AAAAAAAAAXY/DfYVdWFiK4oTvDQ3gyiwdUZ0UaKZfvvUACLcBGAsYHQ/s1600/bigboss11a.jpg" alt="" class="h-full w-full rounded-3xl">
+    <div class="text-white font-bold absolute inset-0 flex flex-col justify-center items-center mt-56 ">
+      <h1>
+      Can neeraj comeback ?
+    </h1>
+    <p class="font-thin">Lorem ipsum dolor sit amet. Quos, nam?
+    </p>
+    </div>
+  </div>
+  <div class="relative bg-slate-900 rounded-3xl sm:h-[21rem] sm:w-[37rem] h-[16rem] w-[30rem] flex-shrink-0">
+    <img src="https://www.quever.news/u/fotografias/m/2022/10/11/f1280x720-39342_171017_7330.jpg" alt="" class="h-full w-full rounded-3xl">
+    <div class="text-white font-bold absolute inset-0 flex flex-col justify-center items-center mt-56 ">
+      <h1>
+      Can neeraj comeback ?
+    </h1>
+    <p class="font-thin">Lorem ipsum dolor sit amet. Quos, nam?
+    </p>
+    </div>
+  </div>
+  <div class="relative bg-slate-900 rounded-3xl sm:h-[21rem] sm:w-[37rem] h-[16rem] w-[30rem] flex-shrink-0">
+    <img src="https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0808%2Fr1370674_1296x729_16-9.jpg" alt="" class="h-full w-full rounded-3xl">
+    <div class="text-white font-bold absolute inset-0 flex flex-col justify-center items-center mt-56 ">
+      <h1>
+      Can neeraj comeback ?
+    </h1>
+    <p class="font-thin">Lorem ipsum dolor sit amet. Quos, nam?
+    </p>
+    </div>
+  </div>
+</div>
+
+<!-- --------------------------------------- -->
+  <div class="flex flex-row p-3 bg-black gap-5 ml-3">
+    <div class="bg-slate-900 w-1/12 aspect-square rounded-lg">
+      <img src="https://www.brandcolorcode.com/media/pogo-logo.png" alt="" class="object-contain w-full h-full">
+    </div>
+    <div class="bg-slate-900 w-1/12 aspect-square rounded-lg">
+      <img src="https://www.freepnglogos.com/uploads/pokemon-go-png-logo/vetor-logo-pokemon-go-illustrator-png-logo-4.png" alt="" class="object-contain w-full h-full">
+    </div>
+    <div class="bg-slate-900 w-1/12 aspect-square rounded-lg">
+      <img src="https://pluspng.com/img-png/cnn-logo-png-cnn-international-logo-png-transparent-amp-svg-vector-pluspng-2400x2400.png" alt="" class="object-contain w-full h-full">
+    </div>
+    <div class="bg-slate-900 w-1/12 aspect-square rounded-lg">
+      <img src="https://www.sonypicturesnetworks.com/images/logos/SET%20LOGO.png" alt="" class="object-contain w-full h-full">
+    </div>
+    <div class="bg-slate-900 w-1/12 aspect-square rounded-lg">
+      <img src="http://www.ranklogos.com/wp-content/uploads/2014/07/Cartoon-Network-Logo.png" alt="" class="object-contain w-full h-full">
+    </div>
+    <div class="bg-slate-900 w-1/12 aspect-square rounded-lg">
+      <img src="http://pngimg.com/uploads/manchester_united/manchester_united_PNG9.png" alt="" class="object-contain w-full h-full">
+    </div>
+    <div class="bg-slate-900 w-1/12 aspect-square rounded-lg">
+      <img src="https://logospng.org/download/bundesliga/logo-bundesliga-4096.png" alt="" class="object-contain w-full h-full">
+    </div>
+    <div class="bg-slate-900 w-1/12 aspect-square rounded-lg">
+      <img src="https://logodownload.org/wp-content/uploads/2018/05/laliga-logo-2.png" alt="" class="object-contain w-full h-full">
+    </div>
+  </div>
+
+<!-- ----------------------------------------- -->
+
+<div class="pl-4">
+  <div class= "text-white font-extrabold pb-3 text-2xl">
+   <h1>In the spotlight </h1>
+ </div>
+ <div class="flex flex-row gap-5 bg-black">
+ <div class="w-2/5 bg-slate-300 aspect-video rounded-lg">
+ <img src="https://v3img.voot.com/resizeMedium,w_768,h_432/v3Storage/assets/16x9-1723120218795.jpg" alt="" class="object-contain rounded-lg"></div>
+ <div class="w-2/5 bg-slate-300 aspect-video rounded-lg">
+ <img src="https://v3img.voot.com/resizeMedium,w_768,h_432/v3Storage/assets/16x9-1723390667929.jpg" class="object-contain rounded-lg" alt=""></div>
+</div>
+<div class="text-white text-end p-2 "> 
+    <button  class=" hover:text-pink-700 text-white rounded-full h-8 w-8 text-xl ">></button>
+  </div>
+</div>
+
+  <div class= "text-white p-3 font-extrabold text-2xl">
+    <h1>Hot Right Now</h1>
+  </div>
+
+  <div class="flex flex-row  ml-5 gap-3">
+    <div class=" bg-slate-900 w-1/4 aspect-square rounded-3xl  sm:w-1/5">
+      <img src="https://m.media-amazon.com/images/M/MV5BY2FjZGRmNzktMDY5ZC00ZTMzLWFkOTYtN2EzN2FmYzAyZWZlXkEyXkFqcGc@._V1_FMjpg_UY480_.jpg" alt="" class="object-cover rounded-3xl w-full h-full   ">
+    </div>
+    <div class=" bg-slate-900 w-1/4 aspect-square rounded-3xl  sm:w-1/5">
+      <img src="https://4.bp.blogspot.com/-RXL7H1poSxM/Vq1Om_ZrEUI/AAAAAAAAII8/uxoD-gpuufQ/s1600/KungFuPanda3.jpg" alt="" class="object-cover rounded-3xl w-full h-full  ">
+    </div>
+    <div class=" bg-slate-900 w-1/4 aspect-square rounded-3xl  sm:w-1/5">
+      <img src="https://v3img.voot.com/resizeMedium,w_384,h_384/v3Storage/assets/1x1-1723313292379.jpg" alt="" class="rounded-3xl object-cover    ">
+    </div>
+    <div class=" bg-slate-900 w-1/5 aspect-square rounded-3xl hidden sm:inline-block">
+      <img src="https://v3img.voot.com/resizeMedium,w_384,h_384/v3Storage/assets/1x1-1722835078049.jpg" class="rounded-3xl object-cover    " alt="">
+    </div>
+    <div class=" bg-slate-900 w-1/5 aspect-square rounded-3xl hidden sm:inline-block">
+      <img src="https://v3img.voot.com/resizeMedium,w_384,h_384/v3Storage/assets/1x1-1722835078049.jpg" class="rounded-3xl object-cover" alt="">
+    </div>
+  </div>
+  <div class="text-white text-end p-2 "> 
+    <button  class=" hover:text-pink-700 text-white rounded-full h-8 w-8 text-xl ">></button>
+  </div>
+
+<!-- ------------------------------------------- -->
+
+<div class="m-3">
+  <div class="text-white font-extrabold pb-3 text-2xl">
+    <h1>Fresh Episods</h1>
+  </div>
+  <div class="flex flex-row gap-5 overflow-x-hidden pb-5">
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <img src="https://v3img.voot.com/resizeMedium,w_256,h_341/v3Storage/assets/3x4dsh-1723201612969.jpg" class="rounded-3xl object-cover" alt="">
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <img src="https://v3img.voot.com/resizeMedium,w_256,h_341/v3Storage/assets/3x4-1723033054216.jpg" class="rounded-3xl object-cover" alt="">
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <img src="https://v3img.voot.com/resizeMedium,w_256,h_341/v3Storage/assets/3x4-1723381053032.jpg" class="rounded-3xl object-cover" alt="">
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <img src="https://v3img.voot.com/resizeMedium,w_256,h_341/v3Storage/assets/3x4-1723390690092.jpg" class="rounded-3xl object-cover" alt="">
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <img src="https://v3img.voot.com/resizeMedium,w_256,h_341/v3Storage/assets/3x4-1723226462013.jpg" class="rounded-3xl object-cover" alt="">
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <img src="https://v3img.voot.com/resizeMedium,w_256,h_341/v3Storage/assets/3x4-1723033054216.jpg" class="rounded-3xl object-cover" alt="">
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <!-- Content here -->
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <!-- Content here -->
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <!-- Content here -->
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <!-- Content here -->
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <!-- Content here -->
+    </div>
+    <div class="w-2/12 bg-slate-900 aspect-[3/4] rounded-3xl flex-shrink-0">
+      <!-- Content here -->
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------------------------- -->
+
+<div class="flex flex-row  ml-5 gap-3 overflow-x-hidden">
+  <div class=" bg-slate-900 w-1/5 aspect-square rounded-3xl   flex-shrink-0">
+    <img src="https://m.media-amazon.com/images/M/MV5BY2FjZGRmNzktMDY5ZC00ZTMzLWFkOTYtN2EzN2FmYzAyZWZlXkEyXkFqcGc@._V1_FMjpg_UY480_.jpg" alt="" class="object-cover rounded-3xl w-full h-full   ">
+  </div>
+  <div class=" bg-slate-900 w-1/5 aspect-square rounded-3xl  flex-shrink-0">
+    <img src="https://4.bp.blogspot.com/-RXL7H1poSxM/Vq1Om_ZrEUI/AAAAAAAAII8/uxoD-gpuufQ/s1600/KungFuPanda3.jpg" alt="" class="object-cover rounded-3xl w-full h-full  ">
+  </div>
+  <div class=" bg-slate-900 w-1/5 aspect-square rounded-3xl  flex-shrink-0">
+    <img src="https://v3img.voot.com/resizeMedium,w_384,h_384/v3Storage/assets/1x1-1723313292379.jpg" alt="" class="rounded-3xl object-cover    ">
+  </div>
+  <div class=" bg-slate-900 w-1/5 aspect-square rounded-3xl  flex-shrink-0">
+    <img src="https://v3img.voot.com/resizeMedium,w_384,h_384/v3Storage/assets/1x1-1722835078049.jpg" class="rounded-3xl object-cover    " alt="">
+  </div>
+  <div class=" bg-slate-900 w-1/5 aspect-square rounded-3xl  flex-shrink-0">
+    <img src="https://v3img.voot.com/resizeMedium,w_384,h_384/v3Storage/assets/1x1-1722835078049.jpg" class="rounded-3xl object-cover    " alt="">
+  </div>
+</div>
+<div class="text-white text-end p-2 "> 
+    <button  class=" hover:text-pink-700 text-white rounded-full h-8 w-8 text-xl ">></button>
+  </div>
+</div>
+<!-- ----------------------------------------- -->
+  <script>
+    document.getElementById('left_scroll').addEventListener('click', function() {
+        document.getElementById('scroll_container').scrollBy({
+          left: -100, // Adjust this value to change scroll amount
+          behavior: 'smooth'
+        });
+      });
+  
+      document.getElementById('right_scroll').addEventListener('click', function() {
+        document.getElementById('scroll_container').scrollBy({
+          left: 100, // Adjust this value to change scroll amount
+          behavior: 'smooth'
+        });
+      });
+  
+
+      // ---------------------------
+
+
+
+  
+  </script>
+</body>
+
+</html>
